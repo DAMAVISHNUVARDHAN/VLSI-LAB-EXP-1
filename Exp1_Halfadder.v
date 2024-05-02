@@ -1,5 +1,8 @@
-module ha(a,b,sum,carry);
+module halfsubractor(a,b,diff,borrow);
 input a,b;
-output sum,carry;
-
+output diff,borrow;
+wire w1;
+xor g1(diff,a,b);
+not g2(w1,a);
+and g3(borrow,w1,b);
 endmodule
