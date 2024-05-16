@@ -124,6 +124,31 @@ xor g1(diff,a,b);
 and g2(borrow,~a,b);
 
 endmodule
+# 4 BIT RIPPLE CARRY ADDER:
+module rippe_adder(S, Cout, X, Y,Cin);
+input [3:0] X, Y;// Two 4-bit inputs
+input Cin;
+output [3:0] S;
+output Cout;
+wire w1, w2, w3;
+  // instantiating 4 1-bit full adders in Verilog
+fulladder u1(S[0], w1,X[0], Y[0], Cin);
+fulladder u2(S[1], w2,X[1], Y[1], w1);
+fulladder u3(S[2], w3,X[2], Y[2], w2);
+fulladder u4(S[3], Cout,X[3], Y[3], w3);
+endmodule
+module fulladder(S, Co, X, Y, Ci);
+ input X, Y, Ci;
+ output S, Co;
+ wire w1,w2,w3;
+ //Structural code for one bit full adder
+ xor G1(w1, X, Y);
+ xor G2(S, w1, Ci);
+ and G3(w2, w1, Ci);
+ and G4(w3, X, Y);
+ or G5(Co, w2, w3);
+endmodule
+
 
 # 8 BIT RIPPLE CARRY ADDER:
 module fa(a,b,c,sum,carry);
@@ -185,9 +210,13 @@ endmodule
 # FULL SUBTRACTOR:
 ![image](https://github.com/Ocharan10/VLSI-LAB-EXP-1/assets/162343019/d2981316-bdbd-4e9f-ba08-d8fd2316727f)
 
+# 4 BIT RIPPLE CARRY ADDER:
+![WhatsApp Image 2024-05-11 at 08 24 32_817a2706](https://github.com/DAMAVISHNUVARDHAN/VLSI-LAB-EXP-1/assets/112301447/50af87c6-76ab-4f08-9a5c-2d7ed75f803b)
+
+
 
 # 8 BIT RIPPLE CARRY ADDER:
-![image](https://github.com/Ocharan10/VLSI-LAB-EXP-1/assets/162343019/ad4cbd44-f52c-48d8-92fb-101600c7abd6)
+![image](https://github.com/DAMAVISHNUVARDHAN/VLSI-LAB-EXP-1/assets/162343019/ad4cbd44-f52c-48d8-92fb-101600c7abd6)
 
 
 # RESULT:
