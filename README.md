@@ -216,7 +216,7 @@ endmodule
 
 
 # 8 BIT RIPPLE CARRY ADDER:
-![image](https://github.com/DAMAVISHNUVARDHAN/VLSI-LAB-EXP-1/assets/162343019/ad4cbd44-f52c-48d8-92fb-101600c7abd6)
+![image](https://github.com/Ocharan10/VLSI-LAB-EXP-1/assets/162343019/ad4cbd44-f52c-48d8-92fb-101600c7abd6)
 
 
 # RESULT:
