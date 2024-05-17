@@ -1,9 +1,11 @@
 # VLSI-LAB-EXPERIMENTS
-#AIM: To simulate and synthesis Logic Gates,Adders and Subtractor using Xilinx ISE.
+# AIM:
+ To simulate and synthesis Logic Gates,Adders and Subtractor using Xilinx ISE.
 
-#APPARATUS REQUIRED: Xilinx 14.7 Spartan6 FPGA
+# APPARATUS REQUIRED:
+Xilinx 14.7 Spartan6 FPGA
 
-#Procedure:
+# Procedure:
 STEP:1 Start the vivado software, Select and Name the New project.
 
 STEP:2 Select the device family, device, package and speed.
@@ -17,7 +19,7 @@ STEP:5 Select the run simulation adn then run Behavioral Simulation in the Sourc
 STEP:6 Click the simulation to simulate the program and give the inputs and verify the outputs as per the truth table.
 
 STEP:7 compare the output with truth table.
-Logic Diagram :
+# Logic Diagram :
 
 # Logic Gates:
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/ee17970c-3ac9-4603-881b-88e2825f41a4)
